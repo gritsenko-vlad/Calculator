@@ -15,18 +15,18 @@ html {
 	width:350px;
 	height: 350px;
 	background-color: #bfccd7;
-	border-bottom: 8px solid #98a3ac;
+	border-bottom: 8px solid #858e96;
 		border-radius: 15px 15px 15px 15px;
 		-moz-border-radius: 15px 15px 15px 15px;
 		-webkit-border-radius: 15px 15px 15px 15px;
 }
 
+/* Positioning of numbers and operators relative to container */
 .numbers {
 	position: absolute;
 	top: 90px;
 	width: 210px;
 	height: 250px;
-	background-color: yellow;
 }
 
 .operators {
@@ -34,7 +34,6 @@ html {
 	top:90px;	right: 0px;
 	width: 140px;
 	height: 250px;
-	background-color: purple;
 }
 
 .top {
@@ -42,16 +41,20 @@ html {
 	height: 70px;
 	width: 350px;
 	top:10px;
-	background-color: black;
 }
+/*-----------------------------------------------------------*/
 
+/*Top elements*/
 .input {
 	position: absolute;
 	right: 10px;
 	top: 15px;
 	width: 258px;
-	height: 40px;
-	background-color: red;
+	height: 38px;
+	border-radius: 5px;
+	border-top: 4px solid #727a81;
+	background-color: #98a3ac;
+
 }
 
 .clear {
@@ -59,39 +62,74 @@ html {
 	position: absolute;
 	top: 15px;
 	left: 10px;
+	color:#e2eaf6;
+	background-color: #e7646d;
+	border-color: #a1464c;
 }
+/*-----------------------------------------------------------*/
 
+/*Button style*/
 span {
 	width: 50px;
 	height: 40px;
-	color: white;
-	background-color: green;
+	color: #727a81;
 	line-height: 40px;
 	text-align: center;
 	font-weight: bold;
+	border-radius: 5px;
+	border-bottom: 3px solid #9ea3ac;
+	cursor: pointer;
 }
 
 
 .numbers span {
 	float: left;
 	margin: 10px;
+	background-color: #e2eaf6;
+	
 }
 
 .operators span {
 	float: left;
 	margin: 10px;
+	background-color: #8ee1f7;
+	border-color: #639dac;
 }
 
 .operators span:nth-child(3n) {
-	height:160px;
+	height:165px;
 	line-height: 160px;
 	font-size: 20px;
 }
 
 .operators span:nth-child(5n) {
-	height:100px;
+	height:102px;
 	line-height: 100px;
 	font-size: 20px;
 }
-  
+/*-----------------------------------------------------------*/
 
+/*Hover effect*/
+.numbers span:active {
+	float: left;
+	margin: 10px;
+	background-color: #bcbcf2;
+	border-color: #9696c1;
+}
+
+.operators span:active {
+	float: left;
+	margin: 10px;
+	background-color: #7fcade;
+	border-color: #639dac;
+}
+
+.clear:active {
+	float: left;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	color:#e2eaf6;
+	background-color: #cf5a62;
+	border-color: #a1464c;
+}
