@@ -79,6 +79,7 @@ span {
 	border-radius: 5px;
 	border-bottom: 3px solid #9ea3ac;
 	cursor: pointer;
+	user-select:none;
 }
 
 
