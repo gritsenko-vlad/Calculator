@@ -54,7 +54,12 @@ html {
 	border-radius: 5px;
 	border-top: 4px solid #727a81;
 	background-color: #98a3ac;
-
+	color:#e2eaf6;
+	text-align: right;
+	line-height: 38px;
+	font-weight: bold;
+	font-size: 15pt;
+	letter-spacing: 3px;
 }
 
 .clear {
@@ -134,3 +139,4 @@ span {
 	background-color: #cf5a62;
 	border-color: #a1464c;
 }
+/*-----------------------------------------------------------*/
