@@ -101,7 +101,9 @@ span {
 	background-color: #8ee1f7;
 	border-color: #639dac;
 }
-
+.operators span:first-child {
+	font-size: 20px;
+}
 .operators span:nth-child(3n) {
 	height:165px;
 	line-height: 160px;
