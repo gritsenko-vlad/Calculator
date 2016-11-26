@@ -1,4 +1,3 @@
-# Calculator
-Javascript calculator
+# Javascript Calculator
 
 It's a simple flat designed calculator.
