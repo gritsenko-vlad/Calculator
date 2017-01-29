@@ -9,6 +9,7 @@ var operators = ['.', '+', '/', '*', '-'];
 	if(target.tagName != 'SPAN') {
 	 	return;
 	}
+
  	input.innerHTML += target.innerHTML;
 	var inputVal = input.innerHTML;
 
@@ -16,10 +17,11 @@ var operators = ['.', '+', '/', '*', '-'];
  		input.innerHTML = '';
  	}
  	else if (target.innerHTML == '=') {
+
  		inputVal = inputVal.slice(0, -1);
  		input.innerHTML = eval(inputVal);
-	}
-	
+ 		}
+ 		
 	//If input field is empty only minus operator can be added
 	for (var i = 0; i <= operators.length-2; i++) {
 		if(inputVal[0] == operators[i]) {
@@ -39,4 +41,6 @@ var operators = ['.', '+', '/', '*', '-'];
 		input.innerHTML += sign;
 	}
  }
-}());
+
+}
+());

@@ -60,6 +60,7 @@ html {
 	font-weight: bold;
 	font-size: 15pt;
 	letter-spacing: 3px;
+	overflow: hidden;
 }
 
 .clear {
